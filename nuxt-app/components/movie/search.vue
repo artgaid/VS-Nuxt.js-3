@@ -1,5 +1,5 @@
 <script setup>
-const query = ref('')
+const query = ref('batman')
 const movies = ref([])
 
 const search = async () => {
@@ -7,6 +7,8 @@ const search = async () => {
 
     movies.value = Search
 }
+
+search()
 </script>
 
 <template>
