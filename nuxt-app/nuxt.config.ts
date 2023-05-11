@@ -16,6 +16,12 @@ export default defineNuxtConfig({
         dirs: ['stores'],
     },
 
+    routeRules: {
+        "/hybrid-rendering/spa": { ssr: false },
+        "/hybrid-rendering/static": { static: true },
+        "/hybrid-rendering/swr": { swr: true },
+    }
+
     // alias: {
     //     pinia: '/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs'
     // },
