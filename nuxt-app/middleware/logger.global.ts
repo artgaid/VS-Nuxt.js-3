@@ -1,3 +1,3 @@
-export default defineNuxtRouteMiddleware((to, from) => {
-    console.log(to, from, 'logger middleware')
+export default defineNuxtRouteMiddleware(() => {
+    // console.log(to, from, 'logger middleware')
 })
